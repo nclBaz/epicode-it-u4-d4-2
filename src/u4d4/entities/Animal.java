@@ -1,6 +1,6 @@
 package u4d4.entities;
 
-public class Animal {
+public abstract class Animal {
 	String name;
 	int age;
 
@@ -28,5 +28,9 @@ public class Animal {
 	public void walk() {
 		System.out.println("Sono un animale e sto camminando");
 	}
+
+	abstract public void getInfo();
+	// Un metodo dichiarato come abstract serve per
+	// obbligare i figli ad implementare tale metodo
 
 }

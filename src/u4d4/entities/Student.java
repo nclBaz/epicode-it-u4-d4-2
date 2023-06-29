@@ -2,7 +2,7 @@ package u4d4.entities;
 
 import java.util.Random;
 
-public class Student {
+public class Student implements Jumper {
 	// Lista attributi di istanza
 	private String name;
 	private String surname;
@@ -89,6 +89,12 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", surname=" + surname + ", id=" + id + ", studentType=" + studentType + "]";
+	}
+
+	@Override
+	public void jump() {
+		System.out.println("Sto saltando");
+
 	}
 
 }
